@@ -1,9 +1,12 @@
-let hamburgerAppear = document.querySelector("hamburger-menu");
-console.log(hamburgerAppear);
+let hamburgerAppear = document.querySelector(".hamburger-menu");
+let btnClose = document.querySelector(".close");
+let btnHamburger = document.querySelector(".header-right > a");
 
 
+btnHamburger.addEventListener('click', function(){
+    hamburgerAppear.style.display = "block";
+});
 
-/*hamburgerAppear.addEventListener('click', function() {
-    list.display = block;
-})*/
- 
+btnClose.addEventListener("click", function(){
+    hamburgerAppear.style.display = "none";
+});
